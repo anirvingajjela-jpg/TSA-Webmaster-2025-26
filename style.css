@@ -1,0 +1,122 @@
+/* General Resets and Colors */
+* {
+    transition: 0.25s all;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-blue: #2c3e50;
+    --accent-blue: hsl(204, 70%, 43%);
+    --bg-light: #ecf0f1;
+    --text-dark: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color: var(--text-dark);
+    scroll-behavior: smooth;
+    background-color: #f4f7f8;
+}
+
+/* Header & Navigation */
+header {
+    background: var(--primary-blue);
+    color: white;
+    padding: 1rem 5%;
+    top: 0;
+    position: sticky;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#ana {
+    line-height: 0.8;
+    font-size: 8px;
+    margin-right: 5px;
+    text-transform: lowercase;
+}
+
+#calypto {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+nav ul#navbar-items {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+nav ul#navbar-items li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--accent-blue);
+}
+
+/* Hero / Purpose Section */
+#first-section {
+    background: var(--bg-light);
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    border-bottom: 5px solid var(--accent-blue);
+}
+
+/* Directory & Search Grid */
+#categories {
+    padding: 40px 10%;
+}
+
+.categories-nav {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.categories-nav button {
+    padding: 10px 20px;
+    border: none;
+    background: var(--primary-blue);
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.categories-nav button:hover {
+    background: var(--accent-blue);
+}
+
+/* The Resource Cards */
+.event-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.filtered-event {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px

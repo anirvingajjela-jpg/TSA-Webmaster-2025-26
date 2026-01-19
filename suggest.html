@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Suggest | anaCalypto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav><a href="/tsa2026/"><h1 id="calypto">Calypto</h1></a></nav>
+    </header>
+
+    <section id="first-section" style="height:auto; padding: 50px 10%;">
+        <div style="background:white; padding:40px; border-radius:10px; width:100%; color:#333;">
+            <h2>Suggest a Community Resource</h2>
+            <p><em>Account verification required to prevent spam.</em></p>
+            <form onsubmit="alert('Thank you! Submitted for review.'); return false;">
+                <input type="text" placeholder="Resource Name" required style="display:block; width:100%; margin:10px 0; padding:10px;">
+                <select style="display:block; width:100%; margin:10px 0; padding:10px;">
+                    <option>Non-Profit</option>
+                    <option>Support Service</option>
+                    <option>Community Event</option>
+                </select>
+                <input type="text" placeholder="Location/Address" style="display:block; width:100%; margin:10px 0; padding:10px;">
+                <input type="url" placeholder="Website URL" style="display:block; width:100%; margin:10px 0; padding:10px;">
+                <button type="submit" style="background:hsl(204, 70%, 43%); color:white; border:none; padding:15px 30px; cursor:pointer;">Submit for Review</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anaCalypto | Wilmington Community Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Modern Hero Styling to enhance your existing style.css */
+        #first-section {
+            background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), 
+                        url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            height: 450px;
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .hero-text h2 { font-size: 3.5rem; margin: 0; }
+        .hero-text p { font-size: 1.2rem; max-width: 600px; margin: 20px auto; }
+        
+        .highlight-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--accent-blue);
+            padding-bottom: 10px;
+        }
+        
+        .cta-button {
+            background: var(--accent-blue);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .cta-button:hover { background: #1a6691; }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="/tsa2026/">
+                <div id="ana">ana</div>
+                <h1 id="calypto">Calypto</h1>
+            </a>
+            <ul id="navbar-items">
+                <li><a href="/tsa2026/browse/">Directory</a></li>
+                <li><a href="/tsa2026/suggest.html">Suggest Resource</a></li>
+                <li><a href="/tsa2026/resource/?random">Surprise Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="first-section">
+        <div class="hero-text">
+            <h2>Wilmington Strong.</h2>
+            <p>Empowering our community by connecting residents with local non-profits, essential support services, and upcoming events.</p>
+            <a href="/tsa2026/browse/" class="cta-button">Explore All Resources</a>
+        </div>
+    </section>
+
+    <section id="categories">
+        <div class="highlight-header">
+            <h3>Featured Spotlights</h3>
+            <p>Hand-picked community essentials</p>
+        </div>
+
+        <div id="event-container" class="event-container">
+            <div style="text-align: center; grid-column: 1 / -1; padding: 50px;">
+                <p>Curating your community highlights...</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="extra-content" style="padding: 60px 10%; background: #fff;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
+            <div>
+                <img src="https://images.unsplash.com/photo-1559027615-cd7607dfdc0f?auto=format&fit=crop&w=600" 
+                     style="width: 100%; border-radius: 10px; box-shadow: 10px 10px 0px var(--primary-blue);" alt="Community group">
+            </div>
+            <div>
+                <h2>Why anaCalypto?</h2>
+                <p>Derived from the Greek word for "discovery," our mission is to uncover the hidden gems of Wilmington—from small food pantries to major cultural events. We believe information is the first step toward community growth.</p>
+                <ul style="list-style: none; padding: 0;">
+                    <li> <strong>Verified:</strong> Every resource is reviewed for accuracy.</li>
+                    <li> <strong>Inclusive:</strong> Focus on services for all residents.</li>
+                    <li><strong>Live:</strong> Real-time updates on local programs.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 TSA State Conference | Odyssey Charter School Chapter | Wilmington, DE</p>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="fetchJSON.js"></script>
+
+</body>
+</html>
